@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chat Api - Websocket | Chatbot AI</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="Canada Games &amp; Brock University Chatbot Project">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.b446ffeb.js" as="script"><link rel="preload" href="/assets/js/2.643867f3.js" as="script"><link rel="preload" href="/assets/js/7.07da22be.js" as="script"><link rel="prefetch" href="/assets/js/10.956caae5.js"><link rel="prefetch" href="/assets/js/11.6e6a395c.js"><link rel="prefetch" href="/assets/js/12.d7c9d12a.js"><link rel="prefetch" href="/assets/js/13.3da2bdfa.js"><link rel="prefetch" href="/assets/js/14.77830055.js"><link rel="prefetch" href="/assets/js/3.fb243ef2.js"><link rel="prefetch" href="/assets/js/4.9460d833.js"><link rel="prefetch" href="/assets/js/5.32dde0b2.js"><link rel="prefetch" href="/assets/js/6.345e52dd.js"><link rel="prefetch" href="/assets/js/8.684b4d02.js"><link rel="prefetch" href="/assets/js/9.dd0b157a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Chatbot AI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">More</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Use
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/use/deploy.html" class="nav-link">
+  Deploy
+</a></li><li class="dropdown-subitem"><a href="/use/dev.html" class="nav-link">
+  Development
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Development
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/dev/train-data.html" class="nav-link">
+  Train Data
+</a></li><li class="dropdown-subitem"><a href="/dev/hook.html" class="nav-link">
+  Hook
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/chat.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Chatbot Api
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Code
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/open-source.html" class="nav-link">
+  Open Source
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/COSC-4P02" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">More</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Use
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/use/deploy.html" class="nav-link">
+  Deploy
+</a></li><li class="dropdown-subitem"><a href="/use/dev.html" class="nav-link">
+  Development
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Development
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/dev/train-data.html" class="nav-link">
+  Train Data
+</a></li><li class="dropdown-subitem"><a href="/dev/hook.html" class="nav-link">
+  Hook
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/chat.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Chatbot Api
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Code
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/open-source.html" class="nav-link">
+  Open Source
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/COSC-4P02" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="chat-api-websocket"><a href="#chat-api-websocket" class="header-anchor">#</a> Chat Api - Websocket</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">wss</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>ws<span class="token punctuation">.</span>chatbot<span class="token operator">-</span>ai<span class="token punctuation">.</span>ga<span class="token operator">:</span><span class="token number">8001</span>
+
+WebSocket w<span class="token operator">/</span> <span class="token constant">SSL</span>
+</code></pre></div><h2 id="send-to-server"><a href="#send-to-server" class="header-anchor">#</a> Send to Server</h2> <div class="language-js extra-class"><pre class="language-js"><code>ws<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">time</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">version</span><span class="token operator">:</span> <span class="token string">'brock'</span><span class="token punctuation">,</span> <span class="token comment">// brock / game</span>
+  <span class="token literal-property property">agent</span><span class="token operator">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">msg</span><span class="token operator">:</span> value<span class="token punctuation">.</span>text
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="text-response"><a href="#text-response" class="header-anchor">#</a> Text Response</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">'type'</span><span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'text'</span><span class="token operator">:</span> <span class="token string">'Hey there!'</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'disableInput'</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="button-response"><a href="#button-response" class="header-anchor">#</a> Button Response</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">'type'</span><span class="token operator">:</span> <span class="token string">'button'</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'text'</span><span class="token operator">:</span> <span class="token string">'Here are some links'</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'options'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string-property property">'text'</span><span class="token operator">:</span> <span class="token string">'How to use Google'</span><span class="token punctuation">,</span>
+      <span class="token string-property property">'value'</span><span class="token operator">:</span> <span class="token string">'https://google.com'</span><span class="token punctuation">,</span>
+      <span class="token string-property property">'action'</span><span class="token operator">:</span> <span class="token string">'url'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string-property property">'text'</span><span class="token operator">:</span> <span class="token string">&quot;Not what I'm looking for&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">'value'</span><span class="token operator">:</span> <span class="token string">'result_not_match'</span><span class="token punctuation">,</span>
+      <span class="token string-property property">'action'</span><span class="token operator">:</span> <span class="token string">'postback'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'disableInput'</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h1 id="user-enter-chat-log"><a href="#user-enter-chat-log" class="header-anchor">#</a> User Enter Chat Log</h1> <div class="language-js extra-class"><pre class="language-js"><code>api<span class="token punctuation">.</span>chatbot<span class="token operator">-</span>ai<span class="token punctuation">.</span>ga<span class="token operator">/</span>log<span class="token operator">/</span>enter<span class="token operator">/</span>
+
+<span class="token constant">GET</span>
+</code></pre></div><h1 id="generage-chat-log-pdf"><a href="#generage-chat-log-pdf" class="header-anchor">#</a> Generage chat log pdf</h1> <div class="language-js extra-class"><pre class="language-js"><code>api<span class="token punctuation">.</span>chatbot<span class="token operator">-</span>ai<span class="token punctuation">.</span>ga<span class="token operator">/</span>chat<span class="token operator">/</span>pdf<span class="token operator">/</span>
+
+<span class="token constant">POST</span> <span class="token constant">JSON</span> w<span class="token operator">/</span> chatlog
+</code></pre></div><h1 id="image-cache"><a href="#image-cache" class="header-anchor">#</a> Image Cache</h1> <div class="language-js extra-class"><pre class="language-js"><code>api<span class="token punctuation">.</span>chatbot<span class="token operator">-</span>ai<span class="token punctuation">.</span>ga<span class="token operator">/</span>image<span class="token operator">/</span><span class="token operator">...</span>
+
+<span class="token constant">GET</span> <span class="token keyword">with</span> image name
+</code></pre></div><h1 id="niagara-covid-status-today"><a href="#niagara-covid-status-today" class="header-anchor">#</a> Niagara COVID status today</h1> <div class="language-js extra-class"><pre class="language-js"><code>niagara<span class="token punctuation">.</span>krunk<span class="token punctuation">.</span>cn<span class="token operator">/</span>today<span class="token operator">-</span>api<span class="token punctuation">.</span>php
+
+<span class="token constant">GET</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b446ffeb.js" defer></script><script src="/assets/js/2.643867f3.js" defer></script><script src="/assets/js/7.07da22be.js" defer></script>
+  </body>
+</html>
