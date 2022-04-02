@@ -8,7 +8,7 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Docs', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
       {
         text: 'More',
@@ -60,7 +60,8 @@ module.exports = {
           }
         ]
       },
-      { text: 'Github', link: 'https://github.com/COSC-4P02' }
+      { text: 'Github', link: 'https://github.com/COSC-4P02' },
+      { text: 'Home', link: 'https://chatbot-ai.ga' }
     ]
   }
 }

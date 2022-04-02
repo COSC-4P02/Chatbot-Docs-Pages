@@ -4,6 +4,7 @@
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/en/)
+- [Python3](https://www.python.org)
 
 ## Backend
 
@@ -11,6 +12,7 @@
 <code-block title="NPM">
 ```bash
 cd Backend
+pip3 install -r requirement.txt
 npm install
 npm run serve
 ```

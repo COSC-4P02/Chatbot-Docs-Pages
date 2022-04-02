@@ -6,6 +6,7 @@
 <code-block title="NPM">
 ```bash
 cd Backend
+pip3 install -r requirement.txt
 npm install
 npm run serve
 ```

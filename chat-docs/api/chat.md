@@ -15,6 +15,15 @@ ws.send(JSON.stringify({
   msg: value.text
 }))
 ```
+
+### Parameters
+
+`version`: brock, game
+
+`agent`: user, bot
+
+`type`: text, button
+
 ## Text Response
 ```js
 {
@@ -23,6 +32,7 @@ ws.send(JSON.stringify({
   'disableInput': false
 }
 ```
+
 ## Button Response
 ```js
 {
@@ -44,6 +54,18 @@ ws.send(JSON.stringify({
 },
 ```
 
+### Parameters
+
+`type`: text, button, news
+
+`disableInput`: true, false
+
+`options`: []
+
+`news`: []
+
+---
+
 # User Enter Chat Log
 
 ```js
@@ -60,16 +82,32 @@ api.chatbot-ai.ga/chat/pdf/
 POST JSON w/ chatlog
 ```
 
-# Image Cache
-```js
-api.chatbot-ai.ga/image/...
-
-GET with image name
-```
-
 # Niagara COVID status today
 ```js
 niagara.krunk.cn/today-api.php
 
 GET
+```
+
+# Brock News
+```js
+api.chatbot-ai.ga/data/brock/news
+api.chatbot-ai.ga/data/brock/news/cache
+
+GET
+```
+
+# Brock News Search
+```js
+api.chatbot-ai.ga/data/brock/news/search?s=
+
+GET w/ text
+```
+
+# Stats Api
+```js
+api.chatbot-ai.ga/stats/query?q=
+api.chatbot-ai.ga/stats_array/query?q=
+
+GET w/ dbquery
 ```
