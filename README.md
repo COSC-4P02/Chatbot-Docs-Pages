@@ -1,6 +1,8 @@
-# Chatbot Docs
+# Chatbot-Ai Documentation Pages
 
-# Serve
+[Try it now](https://docs.chatbot-ai.ga)
+
+# Dev
 
 ```
 yarn docs:dev  
@@ -15,6 +17,7 @@ yarn docs:build
 # Deploy
 
 Move and Rename
+
 Chatbot-Docs/chat-docs/.vuepress/dist
 ->
 Chatbot-Docs/Docs
