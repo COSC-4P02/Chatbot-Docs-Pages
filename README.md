@@ -2,19 +2,19 @@
 
 [Try it now](https://docs.chatbot-ai.ga)
 
-# Dev
+## Dev
 
 ```
 yarn docs:dev  
 ```
 
-# Build
+## Build
 
 ```
 yarn docs:build
 ```
 
-# Deploy
+## Deploy
 
 Move and Rename
 

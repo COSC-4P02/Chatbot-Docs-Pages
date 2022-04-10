@@ -6,6 +6,14 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }]
   ],
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-620XBF3V1E' // UA-00000000-0
+      }
+    ]
+  ],
   themeConfig: {
     nav: [
       { text: 'Docs', link: '/' },

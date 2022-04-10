@@ -104,6 +104,14 @@ api.chatbot-ai.ga/data/brock/news/search?s=
 GET w/ text
 ```
 
+# Games News Search
+```js
+api.chatbot-ai.ga/data/game/news
+api.chatbot-ai.ga/data/game/news/cache
+
+GET
+```
+
 # Stats Api
 ```js
 api.chatbot-ai.ga/stats/query?q=
