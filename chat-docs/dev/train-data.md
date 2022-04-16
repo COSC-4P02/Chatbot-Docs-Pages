@@ -6,7 +6,7 @@ manager.addDocument('en', 'Get Started', 'agent.start');
 ```
 ## Answer
 ```js
-manager.addAnswer('en', 'agent.start', 'We are start now');
+manager.addAnswer('en', 'agent.start', 'We are starting now');
 ```
 
 ## With Named Entity Text (NER)

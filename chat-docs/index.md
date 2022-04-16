@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: https://chatbot-ai.ga/images/logo.webp
 actionText: Get Started →
 actionLink: /guide/getting-started.html
 ---
@@ -21,5 +21,5 @@ actionLink: /guide/getting-started.html
 </div>
 
 ::: slot footer
-MIT Licensed | Copyright © 2021 [Chatbot-ai](https://chatbot-ai.ga)
+MIT Licensed | Copyright © 2022 [Chatbot-Ai](https://chatbot-ai.ga)
 :::

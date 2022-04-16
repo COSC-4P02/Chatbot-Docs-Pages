@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Edit the Config of Chatbot Backend | Chatbot AI</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="Canada Games &amp; Brock University Chatbot Project">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.d3c9ab3b.js" as="script"><link rel="preload" href="/assets/js/2.79581fe1.js" as="script"><link rel="preload" href="/assets/js/10.9927f78a.js" as="script"><link rel="prefetch" href="/assets/js/11.45a18cd3.js"><link rel="prefetch" href="/assets/js/12.4cd719e7.js"><link rel="prefetch" href="/assets/js/13.27d1de38.js"><link rel="prefetch" href="/assets/js/14.63d6cd24.js"><link rel="prefetch" href="/assets/js/15.b148c2be.js"><link rel="prefetch" href="/assets/js/16.5465f29f.js"><link rel="prefetch" href="/assets/js/3.65fb3cf0.js"><link rel="prefetch" href="/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/assets/js/7.9045ca36.js"><link rel="prefetch" href="/assets/js/8.2969cecb.js"><link rel="prefetch" href="/assets/js/9.1404e364.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Chatbot AI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">More</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Use
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/use/deploy.html" class="nav-link">
+  Deploy
+</a></li><li class="dropdown-subitem"><a href="/use/dev.html" class="nav-link">
+  Development
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Development
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/dev/train-data.html" class="nav-link">
+  Train Data
+</a></li><li class="dropdown-subitem"><a href="/dev/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Config File
+</a></li><li class="dropdown-subitem"><a href="/dev/CI-CD.html" class="nav-link">
+  CI/CD
+</a></li><li class="dropdown-subitem"><a href="/dev/hook.html" class="nav-link">
+  Hook
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/chat.html" class="nav-link">
+  Chatbot Api
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Code
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/open-source.html" class="nav-link">
+  Open Source
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/COSC-4P02" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://chatbot-ai.ga" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Home
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">More</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Use
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/use/deploy.html" class="nav-link">
+  Deploy
+</a></li><li class="dropdown-subitem"><a href="/use/dev.html" class="nav-link">
+  Development
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Development
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/dev/train-data.html" class="nav-link">
+  Train Data
+</a></li><li class="dropdown-subitem"><a href="/dev/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Config File
+</a></li><li class="dropdown-subitem"><a href="/dev/CI-CD.html" class="nav-link">
+  CI/CD
+</a></li><li class="dropdown-subitem"><a href="/dev/hook.html" class="nav-link">
+  Hook
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/chat.html" class="nav-link">
+  Chatbot Api
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Code
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/code/open-source.html" class="nav-link">
+  Open Source
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/COSC-4P02" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://chatbot-ai.ga" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Home
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="edit-the-config-of-chatbot-backend"><a href="#edit-the-config-of-chatbot-backend" class="header-anchor">#</a> Edit the Config of Chatbot Backend</h1> <h2 id="upload-ssl-certificate-for-websocket"><a href="#upload-ssl-certificate-for-websocket" class="header-anchor">#</a> Upload SSL Certificate for WebSocket</h2> <p>The default certificate will be generated after first run, but it should not be used, it is only used by development, you should upload your own one</p> <ul><li>Npm</li></ul> <p><code>./Backend/data/cert/cert.pem</code> <code>./Backend/data/cert/key.pem</code></p> <ul><li>Docker</li></ul> <p><code>/usr/src/app/data/cert/cert.pem</code> <code>/usr/src/app/data/cert/key.pem</code></p> <h2 id="config-js"><a href="#config-js" class="header-anchor">#</a> Config.js</h2> <p><code>config.js</code> is located in <code>./Backend/data/config.js</code> after first run</p> <p>( Docker: <code>/usr/src/app/data/config.js</code> )</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> config <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// WebSocket Port</span>
+config<span class="token punctuation">.</span>WebSocketPort <span class="token operator">=</span> <span class="token number">8001</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Api Service Port</span>
+config<span class="token punctuation">.</span>apiServicePort <span class="token operator">=</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Api Service CORS</span>
+config<span class="token punctuation">.</span>corsAllowedOrigins <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;http://localhost:1901&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;http://localhost:3010&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// SSL Cert</span>
+config<span class="token punctuation">.</span>wsKey <span class="token operator">=</span> <span class="token string">&quot;data/cert/key.pem&quot;</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>wsCert <span class="token operator">=</span> <span class="token string">&quot;data/cert/cert.pem&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Error Log Location</span>
+config<span class="token punctuation">.</span>loggerInfo <span class="token operator">=</span> <span class="token string">&quot;data/logs/chatbot-info.log&quot;</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>loggerError <span class="token operator">=</span> <span class="token string">&quot;data/logs/chatbot-error.log&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// NLP.JS</span>
+config<span class="token punctuation">.</span>nlpThreshold <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Database Main Location</span>
+config<span class="token punctuation">.</span>databaseLocMain <span class="token operator">=</span> <span class="token string">&quot;data/database/chatbot-data-main.cdb&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Database Temp Location</span>
+config<span class="token punctuation">.</span>databaseLocCache <span class="token operator">=</span> <span class="token string">&quot;data/database/chatbot-data-cache.cdb&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Discord Bot Config</span>
+config<span class="token punctuation">.</span>enableDiscord <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>discord <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>discordBrock <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>discordGame <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Faceebook Bot Config</span>
+config<span class="token punctuation">.</span>enableFB <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>FB_brock <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">pageID</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">appID</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">appSecret</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">validationToken</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">pageToken</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>FB_game <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">pageID</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">appID</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">appSecret</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">validationToken</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">pageToken</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> config<span class="token punctuation">;</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d3c9ab3b.js" defer></script><script src="/assets/js/2.79581fe1.js" defer></script><script src="/assets/js/10.9927f78a.js" defer></script>
+  </body>
+</html>

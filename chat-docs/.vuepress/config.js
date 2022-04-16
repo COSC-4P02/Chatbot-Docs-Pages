@@ -43,6 +43,14 @@ module.exports = {
                 link: '/dev/train-data.html'
               },
               {
+                text: 'Config File',
+                link: '/dev/config.html'
+              },
+              {
+                text: 'CI/CD',
+                link: '/dev/CI-CD.html'
+              },
+              {
                 text: 'Hook',
                 link: '/dev/hook.html'
               }
