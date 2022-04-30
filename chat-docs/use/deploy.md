@@ -43,6 +43,14 @@ npm install
 npm run serve
 ```
 </code-block>
+
+<code-block title="YARN">
+```bash
+cd Backend
+yarn
+yarn serve
+```
+</code-block>
 </code-group>
 
 

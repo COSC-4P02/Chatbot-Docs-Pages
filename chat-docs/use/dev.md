@@ -12,6 +12,14 @@ npm install
 npm run serve
 ```
 </code-block>
+
+<code-block title="YARN">
+```bash
+cd Backend
+yarn
+yarn serve
+```
+</code-block>
 </code-group>
 
 ### Run Tests
@@ -23,7 +31,15 @@ npm run serve
 ```bash
 npm run lint
 npm run test
-open https://localhost:3000/test
+open http://localhost:3000/test
+```
+</code-block>
+
+<code-block title="YARN">
+```bash
+yarn lint
+yarn test
+open http://localhost:3000/test
 ```
 </code-block>
 </code-group>
@@ -47,10 +63,10 @@ yarn serve
 <br>
 
 <code-group>
-<code-block title="NPM">
+<code-block title="YARN">
 ```bash
 yarn lint
-yarn test
+yarn jest
 ```
 </code-block>
 </code-group>

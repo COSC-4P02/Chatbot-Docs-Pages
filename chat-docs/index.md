@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: https://chatbot-ai.ga/images/logo.webp
-actionText: Get Started →
-actionLink: /guide/getting-started.html
+actionText: Deploy Now →
+actionLink: /use/deploy.html
 ---
 
 <div class="features">

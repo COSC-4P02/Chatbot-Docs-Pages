@@ -12,7 +12,8 @@ ws.send(JSON.stringify({
   version: 'brock', // brock / game
   agent: 'user',
   type: 'text',
-  msg: value.text
+  extra: '',
+  msg: "Hello"
 }))
 ```
 
@@ -66,15 +67,7 @@ ws.send(JSON.stringify({
 
 ---
 
-# User Enter Chat Log
-
-```js
-api.chatbot-ai.ga/log/enter/
-
-GET
-```
-
-# Generage chat log pdf
+# Generage Chat Log txt
 
 ```js
 api.chatbot-ai.ga/chat/pdf/
@@ -104,7 +97,7 @@ api.chatbot-ai.ga/data/brock/news/search?s=
 GET w/ text
 ```
 
-# Games News Search
+# Canada Games 2022 News
 ```js
 api.chatbot-ai.ga/data/game/news
 api.chatbot-ai.ga/data/game/news/cache

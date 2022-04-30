@@ -28,7 +28,7 @@ manager.addAnswer('en', 'brock.course.des', 'The {{brockCourse}} is a fun Course
 ```js
 !json-{"type":"button","text":"You can reach us at 1812 Sir Isaac Brock Way St. Catharines, ON L2S 3A1 Canada","disableInput":false,"options":[{"text":"Open in Google Maps","value":"https://goo.gl/maps/LhZQxd2xQ86LZUAP7","action":"url"}]}
 ```
-## Make action in answerProcess.js
+## Make actions in answerProcess.js
 ```js
 !covidNiagara
 !courseDes
