@@ -1,4 +1,4 @@
-## MIT License
+## Chatbot-Ai MIT License
 
 Copyright (c) 2022 Chatbot-Ai
 
@@ -57,12 +57,14 @@ SOFTWARE.
 
 ## Api Used:
 
+ - [Brock University](https://brocku.ca)
+ - [Canada Games](https://canadagames.ca)
  - [COVID-19 Statistics For Niagara Region Dashboard](https://github.com/KrunkZhou/COVID19-NiagaraRegion-Dashboard)
  - [KAPI](https://api.krunk.cn)
  - [Google Search](https://programmablesearchengine.google.com/about/)
  - [Google Maps](https://developers.google.com/maps)
 
-## CI/CD:
+## CI/CD Automation:
 
  - [CircleCi](https://circleci.com)
  - [Docker Hub](https://hub.docker.com)
