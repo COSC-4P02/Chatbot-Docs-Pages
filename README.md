@@ -5,7 +5,7 @@
 ## Dev
 
 ```
-yarn docs:dev  
+yarn docs:dev
 ```
 
 ## Build
