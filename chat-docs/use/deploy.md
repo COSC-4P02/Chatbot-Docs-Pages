@@ -122,17 +122,17 @@ sudo iptables -I INPUT -p tcp -m tcp --dport 8001 -j ACCEPT
 
 Under `Website` tab on the left sidebar
 
-Create two new website `api.chatbot-ai.ga` `ws.chatbot-ai.ga` and request SSL from letsencrypt
+Create two new website `api.chatbot-ai.gq` `ws.chatbot-ai.gq` and request SSL from letsencrypt
 
-Click on `api.chatbot-ai.ga` and select `Reverse proxy` tab on the left sidebar and `Add reverse proxy`
+Click on `api.chatbot-ai.gq` and select `Reverse proxy` tab on the left sidebar and `Add reverse proxy`
 
 ```
-Proxy name: api.chatbot-ai.ga
+Proxy name: api.chatbot-ai.gq
 Target URL: http://127.0.0.1:3000
 Sent Domain: $host
 ```
 
 Click `Submit`
 
-Now, try to visit `api.chatbot-ai.ga`, if it is showing `404 Not Found`, then the server is ready to use.
+Now, try to visit `api.chatbot-ai.gq`, if it is showing `404 Not Found`, then the server is ready to use.
 

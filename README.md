@@ -1,6 +1,6 @@
 # Chatbot-Ai Documentation Pages
 
-[Try it now](https://docs.chatbot-ai.ga)
+[Try it now](https://docs.chatbot-ai.gq)
 
 ## Dev
 

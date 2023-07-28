@@ -4,7 +4,7 @@ You will learn how to use our ChatBot in this getting started guide
 
 ## Quick Start
 
-Open [https://web.chatbot-ai.ga](https://web.chatbot-ai.ga)
+Open [https://web.chatbot-ai.gq](https://web.chatbot-ai.gq)
 
 Click the chat button on the bottom right
 

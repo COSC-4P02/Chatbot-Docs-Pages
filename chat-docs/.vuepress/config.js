@@ -77,7 +77,7 @@ module.exports = {
         ]
       },
       { text: 'Github', link: 'https://github.com/COSC-4P02' },
-      { text: 'Home', link: 'https://chatbot-ai.ga' }
+      { text: 'Home', link: 'https://chatbot-ai.gq' }
     ]
   }
 }

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://chatbot-ai.ga/images/logo.webp
+heroImage: https://chatbot-ai.gq/images/logo.webp
 actionText: Deploy Now →
 actionLink: /use/deploy.html
 ---
@@ -21,5 +21,5 @@ actionLink: /use/deploy.html
 </div>
 
 ::: slot footer
-MIT Licensed | Copyright © 2022 [Chatbot-Ai](https://chatbot-ai.ga)
+MIT Licensed | Copyright © 2022 [Chatbot-Ai](https://chatbot-ai.gq)
 :::

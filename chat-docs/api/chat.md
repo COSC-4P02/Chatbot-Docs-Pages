@@ -1,7 +1,7 @@
 # Chat Api - Websocket
 
 ```js
-wss://ws.chatbot-ai.ga:8001
+wss://ws.chatbot-ai.gq:8001
 
 WebSocket w/ SSL
 ```
@@ -70,7 +70,7 @@ ws.send(JSON.stringify({
 # Generage Chat Log txt
 
 ```js
-api.chatbot-ai.ga/chat/pdf/
+api.chatbot-ai.gq/chat/pdf/
 
 POST JSON w/ chatlog
 ```
@@ -84,31 +84,31 @@ GET
 
 # Brock News
 ```js
-api.chatbot-ai.ga/data/brock/news
-api.chatbot-ai.ga/data/brock/news/cache
+api.chatbot-ai.gq/data/brock/news
+api.chatbot-ai.gq/data/brock/news/cache
 
 GET
 ```
 
 # Brock News Search
 ```js
-api.chatbot-ai.ga/data/brock/news/search?s=
+api.chatbot-ai.gq/data/brock/news/search?s=
 
 GET w/ text
 ```
 
 # Canada Games 2022 News
 ```js
-api.chatbot-ai.ga/data/game/news
-api.chatbot-ai.ga/data/game/news/cache
+api.chatbot-ai.gq/data/game/news
+api.chatbot-ai.gq/data/game/news/cache
 
 GET
 ```
 
 # Stats Api
 ```js
-api.chatbot-ai.ga/stats/query?q=
-api.chatbot-ai.ga/stats_array/query?q=
+api.chatbot-ai.gq/stats/query?q=
+api.chatbot-ai.gq/stats_array/query?q=
 
 GET w/ dbquery
 ```
